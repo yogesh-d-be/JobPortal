@@ -70,10 +70,20 @@ form{
     opacity: 0;
 }
 
+.form-field{
+    border: 2px solid gray;
+    padding: 2.5rem 2.8rem;
+    border-radius: 40px;
+    width: max-content;
+    min-width: 350px;
+    max-width: 400px;
+    background-color: lightgray;
+}
+
 .title{
     font-size: 2rem;
     font-weight: 700;
-    color: gray;
+    /* color: gray; */
     margin-bottom: 12px;
 }
 
@@ -81,8 +91,9 @@ form{
     max-width: 300px;
     width:100%;
     height: 45px;
-    background-color: rgb(228, 227, 227);
-    margin: 10px 0;
+    /* background-color: rgb(228, 227, 227); */
+    background-color: white;
+    margin: 20px 0;
     border-radius: 50px;
     display: grid;
     grid-template-columns: 15% 85%;
@@ -101,6 +112,10 @@ form{
     border: none;
     font-weight: 600;
    
+}
+.pass{
+    transition: .2s ease-in-out;
+    
 }
 
 .btn{
@@ -127,6 +142,10 @@ form{
 form p {
     font-weight: 600;
     cursor: pointer;
+}
+
+.form-b-content{
+    margin-top: 6px;
 }
 
 
@@ -239,6 +258,14 @@ form p {
    opacity: 1;
 }
 
+@media (min-width:870px) and (max-width:1025px){
+    .container.sign-up-mode .right-panel .content,
+.container.sign-up-mode .right-panel .image{
+    transform: translateX(80px);
+}
+
+}
+
 @media (max-width: 870px) {
     
     .container:before {
@@ -250,6 +277,51 @@ form p {
         right: initial;
         top: initial;
         transition: 2s ease-in-out;
+    }
+
+    .form-field{
+        
+        padding: 1.5rem 2.5rem 1.5rem;
+        border-radius: 40px;
+        background-color: lightgray;
+    }
+    .title{
+        font-size: 1.5rem;
+        font-weight: 700;
+        /* color: gray; */
+        margin-bottom: 12px;
+    }
+    
+    .input-field{
+        max-width: 300px;
+        width:100%;
+        height: 39px;
+        /* background-color: rgb(228, 227, 227); */
+      
+        margin: 15px 0;
+        border-radius: 50px;
+        display: grid;
+        grid-template-columns: 15% 85%;
+        padding:0.5rem ;
+    }
+    
+    .input-field span{
+        text-align: center;
+        font-size: 1.1rem;
+        color:rgb(64, 64, 64);
+    }
+
+    .btn{
+        width: 100px;
+        height: 40px;
+        font-size: 1rem;
+        border-radius: 40px;
+        margin: 10px 0;
+        color: white;
+        font-weight: 700;
+        background-color: rgb(59 130 246);
+        transition: .5s;
+        cursor: pointer;
     }
 
     .signin-signup{

@@ -107,6 +107,7 @@ function Register(){
             <div className="forms-container">
                 <div className="signin-signup">
                 <form action="" className="sign-in-form">
+                    <div className="form-field">
                     <h2 className="title">Sign In</h2>
                     <div className="input-field">
                         <span className=""><FontAwesomeIcon icon={faEnvelope} /></span>
@@ -116,11 +117,16 @@ function Register(){
                         <span className=""><FontAwesomeIcon icon={faLock} /></span>
                         <input type="password" placeholder="Password"  />
                     </div>
+                    <div className="text-center">
                     <input type="submit" value="Login" className="btn"/>
-                    <p className="pass">Forgot Password?</p>
+                    <p className="form-b-content text-gray-600 hover:text-blue-700 hover:font-bold pass">Forgot Password?</p>
+                    <p className="form-b-content  text-gray-600">Create Account? <span onClick={handleSignUp} className="text-blue-700 font-bold">Sign Up</span></p>
+                    </div>
+                    </div>
                 </form>
 
                 <form action="" className="sign-up-form">
+                <div className="form-field up">
                     <h2 className="title">Sign Up</h2>
                     <div className="input-field">
                         <span className=""><FontAwesomeIcon icon={faUser} /></span>
@@ -138,8 +144,11 @@ function Register(){
                         <span className=""><FontAwesomeIcon icon={faLock} /></span>
                         <input type="password" placeholder="Password"  />
                     </div>
+                    <div className="text-center">
                     <input type="submit" value="Register" className="btn"/>
-                    
+                    <p className="form-b-content text-gray-600">Already have an Account? <span onClick={handleSignUp} className="text-blue-700 font-bold">Sign In</span></p>
+                    </div>
+                    </div>
                 </form>
                 </div>
             </div>
@@ -149,7 +158,7 @@ function Register(){
                 <div className={`panel left-panel `}>
                     <div className={`content `}>
                         <h2>New Here?</h2>
-                        <p>Welcome to our job portal! 🌟 Sign in and explore a world of possibilities!</p>
+                        <p>Welcome to our job portal! 🌟 Sign Up and explore a world of possibilities!</p>
                         <button onClick={handleSignUp} className="btn-s" id="sign-up-btn">Sign Up</button>
                     </div>
                     <img src={require('../assets/career_progres.png')} alt="career" className={`image `}/>
