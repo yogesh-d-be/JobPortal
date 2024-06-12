@@ -132,7 +132,7 @@ function Register(){
                               </div>
                               <div className="text-center">
                                   <input type="submit" value="Login" className="btn"/>
-                                  <p className="form-b-content text-gray-600 hover:text-blue-700 hover:font-bold pass">Forgot Password?</p>
+                                  {/* <p className="form-b-content text-gray-600 hover:text-blue-700 hover:font-bold pass">Forgot Password?</p> */}
                                   <p className="form-b-content text-gray-600">Create Account? <span onClick={handleSignUp} className="text-blue-700 font-bold">Sign Up</span></p>
                               </div>
                           </div>
